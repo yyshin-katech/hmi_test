@@ -24,7 +24,7 @@
 #include <hmi_test/localization2D_msg_bus.h>
 
 #define UDP_PORT 13000
-#define DEST_IP "192.168.1.255"
+#define DEST_IP "192.168.100.255"
 #define PACKET_SIZE 100
 
 typedef struct sforHMI{
