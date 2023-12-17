@@ -79,6 +79,6 @@ void HMI_Test::callback_local(const hmi_test::localization2D_msg_bus& data)
     
     ret = sendto(sock, (const char*)&Buffer, sizeof(for_HMI_Packet), 0, (struct sockaddr *)&DestInfo, sizeof(DestInfo));
 
-    ROS_INFO("LOCAL Callback ret: %d", ret);
+    ROS_INFO("LOCAL Callback ret: %d speed: %.2lf", ret, for_HMI_Packet.Bus_Speed);
 }
         
